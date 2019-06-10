@@ -1,0 +1,135 @@
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: $light-color;
+  font-family: "Roboto", sans-serif;
+}
+
+#navbar {
+  display: flex;
+  background: $secondary-color;
+  color: $white-color;
+  padding: 1rem;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+
+  h1 a {
+    color: #fff;
+  }
+
+  h1 a:hover {
+    color: $primary-color;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+  }
+
+  ul li a {
+    color: $white-color;
+    margin: 0 0.5rem;
+  }
+
+  ul li a:hover {
+    color: $primary-color;
+  }
+}
+
+// Showcase Area
+#showcase {
+  background: url("../img/showcase.jpg") no-repeat center center/cover;
+  height: 100vh;
+
+  .showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: $white-color;
+    padding: 1rem;
+  }
+}
+
+// Why Choose Us Area
+
+#why-join-us {
+  h1 {
+    text-align: center;
+
+    padding: 1rem 0.5rem;
+  }
+}
+
+.why-content {
+  display: flex;
+  padding: 1rem;
+
+  .personal-trainers,
+  .affordable-memberships,
+  .equipment {
+    padding: 1rem;
+    line-height: 2rem;
+  }
+}
+
+// Footer
+
+#main-footer {
+  text-align: center;
+  padding: 2rem;
+  background: $secondary-color;
+  color: $white-color;
+}
+
+// Utility CLasses
+.text-primary {
+  color: $primary-color;
+}
+
+.l-heading {
+  font-size: 3rem;
+}
+.m-heading {
+  font-size: 1.5rem;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+.btn-style {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  color: $white-color;
+  border: solid 1px $white-color;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 2rem;
+  transition: background 500ms ease-in;
+}
+
+.btn-style:hover {
+  color: $primary-color;
+  background: $secondary-color;
+  border: $primary-color;
+}

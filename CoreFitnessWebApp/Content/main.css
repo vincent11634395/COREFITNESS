@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #ccc;
+  font-family: "Roboto", sans-serif;
+}
+
+#navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #110505;
+  color: #fff;
+  padding: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+#navbar h1 a {
+  color: #fff;
+}
+
+#navbar h1 a:hover {
+  color: #9b08f0;
+}
+
+#navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.2rem;
+}
+
+#navbar ul li a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+#navbar ul li a:hover {
+  color: #9b08f0;
+}
+
+#showcase {
+  background: url("../img/showcase.jpg") no-repeat center center;
+  height: 100vh;
+}
+
+#showcase .showcase-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  color: #fff;
+  padding: 1rem;
+}
+
+#why-join-us h1 {
+  text-align: center;
+  padding: 1rem 0.5rem;
+}
+
+.why-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+}
+
+.why-content .personal-trainers,
+.why-content .affordable-memberships,
+.why-content .equipment {
+  padding: 1rem;
+  line-height: 2rem;
+}
+
+#main-footer {
+  text-align: center;
+  padding: 2rem;
+  background: #110505;
+  color: #fff;
+}
+
+.text-primary {
+  color: #9b08f0;
+}
+
+.l-heading {
+  font-size: 3rem;
+}
+
+.m-heading {
+  font-size: 1.5rem;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.btn-style {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  color: #fff;
+  border: solid 1px #fff;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 2rem;
+  -webkit-transition: background 500ms ease-in;
+  transition: background 500ms ease-in;
+}
+
+.btn-style:hover {
+  color: #9b08f0;
+  background: #110505;
+  border: #9b08f0;
+}
+/*# sourceMappingURL=main.css.map */
