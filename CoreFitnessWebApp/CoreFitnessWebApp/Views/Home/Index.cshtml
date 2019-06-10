@@ -1,0 +1,58 @@
+﻿@model IEnumerable<CoreFitnessWebApp.Models.Product>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Product List</h2>
+
+<table class="table">
+    <tr>
+        <th style="width: 20%">
+            <span>Name</span>
+        </th>
+        <th style="width: 20%">
+            <span>Image</span>
+        </th>
+        <th style="width: 10%">
+            <span>Price</span>
+        </th>
+        <th style="width: 10%">
+            <span>Availibility</span>
+        </th>
+        <th style="width: 10%">
+            <span>Stock</span>
+        </th>
+        <th style="width: 30%">
+            <span>Description</span>
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.productName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.productImg)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.productPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.productAvailability)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.productStock)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.productDesc)
+            </td>
+            <td>
+                @Html.ActionLink("View", "ViewProduct", new { id = item.productID })
+            </td>
+        </tr>
+    }
+
+</table>
+
